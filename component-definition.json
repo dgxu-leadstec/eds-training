@@ -167,7 +167,7 @@
                         "template": {
                             "name": "Quote",
                             "model": "quote",
-                            "quote": "<p>Think, McFly! Think!</p>",
+                            "quote": "<p>Think, McFly! Think! Test pull request!</p>",
                             "author": "Biff Tannen"
                         }
                     }
