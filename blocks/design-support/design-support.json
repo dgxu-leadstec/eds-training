@@ -1,0 +1,188 @@
+{
+    "definitions": [
+      {
+        "title": "Design Support",
+        "id": "design-support",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block",
+              "template": {
+                "name": "Design Support",
+                "filter": "design-support-cards"
+              }
+            }
+          }
+        }
+      },
+      {
+        "title": "Design Support Card",
+        "id": "design-support-card",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block/item",
+              "template": {
+                "name": "Design Support Card",
+                "model": "design-support-card"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "models": [
+      {
+        "id": "design-support-card",
+        "fields": [
+          {
+            "component": "container",
+            "label": "Basic Information",
+            "collapsible": true,
+            "fields": [
+              {
+                "component": "reference",
+                "valueType": "string",
+                "name": "icon",
+                "label": "Icon (SVG)",
+                "description": "Upload or select an SVG icon for the card",
+                "multi": false
+              },
+              {
+                "component": "text",
+                "valueType": "string",
+                "name": "title",
+                "label": "Card Title",
+                "required": true,
+                "maxLength": 100,
+                "description": "Main title of the card (max 100 characters)"
+              },
+              {
+                "component": "text-area",
+                "valueType": "string",
+                "name": "description",
+                "label": "Description",
+                "maxLength": 500,
+                "rows": 3,
+                "description": "Brief description of the card content (max 500 characters)"
+              }
+            ]
+          },
+          {
+            "component": "container",
+            "label": "Links",
+            "collapsible": true,
+            "fields": [
+              {
+                "component": "boolean",
+                "name": "showLinks",
+                "label": "Show Links Section",
+                "description": "Toggle to show/hide the links section"
+              },
+              {
+                "component": "multifield",
+                "name": "links",
+                "label": "Card Links",
+                "valueType": "string",
+                "description": "Add multiple links to the card",
+                "fields": [
+                  {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "linkText",
+                    "label": "Link Text",
+                    "required": true,
+                    "placeholder": "e.g., Learn More"
+                  },
+                  {
+                    "component": "aem-content",
+                    "valueType": "string",
+                    "name": "linkUrl",
+                    "label": "Link URL",
+                    "required": true,
+                    "description": "Select a page or enter a URL"
+                  },
+                  {
+                    "component": "select",
+                    "name": "linkTarget",
+                    "label": "Open Link In",
+                    "valueType": "string",
+                    "options": [
+                      {
+                        "name": "Same Window",
+                        "value": "_self"
+                      },
+                      {
+                        "name": "New Window",
+                        "value": "_blank"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "component": "container",
+            "label": "Styling Options",
+            "collapsible": true,
+            "fields": [
+              {
+                "component": "select",
+                "name": "cardStyle",
+                "label": "Card Style",
+                "valueType": "string",
+                "description": "Choose the visual style of the card",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Bordered",
+                    "value": "bordered"
+                  },
+                  {
+                    "name": "Elevated (Shadow)",
+                    "value": "elevated"
+                  },
+                  {
+                    "name": "Flat",
+                    "value": "flat"
+                  }
+                ]
+              },
+              {
+                "component": "select",
+                "name": "cardSize",
+                "label": "Card Size",
+                "valueType": "string",
+                "options": [
+                  {
+                    "name": "Normal",
+                    "value": "normal"
+                  },
+                  {
+                    "name": "Large",
+                    "value": "large"
+                  },
+                  {
+                    "name": "Compact",
+                    "value": "compact"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "filters": [
+      {
+        "id": "design-support-cards",
+        "components": [
+          "design-support-card"
+        ]
+      }
+    ]
+  }

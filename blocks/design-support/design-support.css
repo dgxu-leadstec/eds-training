@@ -1,0 +1,590 @@
+/* Regular 400 */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../resource/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Medium 500 */
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../../resource/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  /* Bold 700 */
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../../resource/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* Black 900 */
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../../resource/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  html {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-size: 16px;
+  }
+  .headline-1 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .headline-1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .headline-1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.5;
+    }
+  }
+  .headline-2 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .headline-2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .headline-2 {
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 1.5;
+    }
+  }
+  .headline-3 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .headline-3 {
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .headline-3 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+  .headline-4 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .headline-4 {
+      font-weight: 700;
+      font-size: 1.375rem;
+      line-height: 1.55;
+    }
+  }
+  @media (max-width: 768px) {
+    .headline-4 {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  .headline-5 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .headline-5 {
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .headline-5 {
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.43;
+    }
+  }
+  .headline-6 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .headline-6 {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .headline-6 {
+      font-weight: 700;
+      font-size: 0.75rem;
+      line-height: 1.33;
+    }
+  }
+  .subtitle-1 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .subtitle-1 {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .subtitle-1 {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  .subtitle-2 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.43;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .subtitle-2 {
+      font-size: 0.875rem;
+      line-height: 1.43;
+    }
+  }
+  @media (max-width: 768px) {
+    .subtitle-2 {
+      font-size: 0.875rem;
+      line-height: 1.43;
+    }
+  }
+  .body-1 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .body-1 {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .body-1 {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  .body-2 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .body-2 {
+      font-size: 0.875rem;
+      line-height: 1.43;
+    }
+  }
+  @media (max-width: 768px) {
+    .body-2 {
+      font-size: 0.875rem;
+      line-height: 1.43;
+    }
+  }
+  .caption {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.33;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .caption {
+      font-size: 0.75rem;
+      line-height: 1.33;
+    }
+  }
+  @media (max-width: 768px) {
+    .caption {
+      font-size: 0.75rem;
+      line-height: 1.33;
+    }
+  }
+  .button {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .button {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+  }
+  @media (max-width: 768px) {
+    .button {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+  }
+  .f-16-500 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .f-14-100 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    font-size: 0.875rem;
+    font-weight: 100;
+    line-height: 1.3;
+  }
+  .rt-white {
+    color: #FFFFFF;
+  }
+  .rt-light-100 {
+    color: #FDFEFE;
+  }
+  .rt-light-200 {
+    color: #FCFDFD;
+  }
+  .rt-light-300 {
+    color: #FBFCFC;
+  }
+  .rt-light-400 {
+    color: #FAFBFC;
+  }
+  .rt-light-500 {
+    color: #F9FAFB;
+  }
+  .rt-light-600 {
+    color: #F8F9FA;
+  }
+  .rt-light-700 {
+    color: #F7F9FA;
+  }
+  .rt-light-800 {
+    color: #F6F8F9;
+  }
+  .rt-light-900 {
+    color: #F5F6F8;
+  }
+  .rt-gray-100 {
+    color: #F3F3F3;
+  }
+  .rt-gray-200 {
+    color: #EBEBEB;
+  }
+  .rt-gray-300 {
+    color: #E2E2E2;
+  }
+  .rt-gray-400 {
+    color: #DCDCDC;
+  }
+  .rt-gray-500 {
+    color: #D6D6D6;
+  }
+  .rt-gray-600 {
+    color: #D1D1D1;
+  }
+  .rt-gray-700 {
+    color: #CCCCCC;
+  }
+  .rt-gray-800 {
+    color: #C6C6C6;
+  }
+  .rt-gray-900 {
+    color: #BCBCBC;
+  }
+  .rt-blue-100 {
+    color: #C2D8FC;
+  }
+  .rt-blue-200 {
+    color: #95BAFE;
+  }
+  .rt-blue-300 {
+    color: #C2D8FC;
+  }
+  .rt-blue-400 {
+    color: #4E85EC;
+  }
+  .rt-blue-500 {
+    color: #3C74C9;
+  }
+  .rt-blue-600 {
+    color: #285EB0;
+  }
+  .rt-blue-700 {
+    color: #18498F;
+  }
+  .rt-blue-800 {
+    color: #0C3677;
+  }
+  .rt-blue-900 {
+    color: #072B62;
+  }
+  .rt-light-blue-100 {
+    color: #C8E5F2;
+  }
+  .rt-light-blue-200 {
+    color: #A0E0F3;
+  }
+  .rt-light-blue-300 {
+    color: #6DCBE3;
+  }
+  .rt-light-blue-400 {
+    color: #3EC1E9;
+  }
+  .rt-light-blue-500 {
+    color: #37A6D9;
+  }
+  .rt-light-blue-600 {
+    color: #2B89B8;
+  }
+  .rt-light-blue-700 {
+    color: #1F6B95;
+  }
+  .rt-light-blue-800 {
+    color: #144D72;
+  }
+  .rt-light-blue-900 {
+    color: #0A3453;
+  }
+  .rt-lime-100 {
+    color: #F1F7D4;
+  }
+  .rt-lime-200 {
+    color: #E2F1A7;
+  }
+  .rt-lime-300 {
+    color: #D4EA7A;
+  }
+  .rt-lime-400 {
+    color: #D6EE4F;
+  }
+  .rt-lime-500 {
+    color: #CDE821;
+  }
+  .rt-lime-600 {
+    color: #B7DC1C;
+  }
+  .rt-lime-700 {
+    color: #B0C11A;
+  }
+  .rt-lime-800 {
+    color: #81901A;
+  }
+  .rt-lime-900 {
+    color: #596815;
+  }
+  .rt-green-100 {
+    color: #C8EEC4;
+  }
+  .rt-green-200 {
+    color: #A3E39D;
+  }
+  .rt-green-300 {
+    color: #7ED775;
+  }
+  .rt-green-400 {
+    color: #63CF58;
+  }
+  .rt-green-500 {
+    color: #47C63A;
+  }
+  .rt-green-600 {
+    color: #40C034;
+  }
+  .rt-green-700 {
+    color: #37B92C;
+  }
+  .rt-green-800 {
+    color: #2FB125;
+  }
+  .rt-green-900 {
+    color: #20A418;
+  }
+  .rt-dark-100 {
+    color: #C9CBCD;
+  }
+  .rt-dark-200 {
+    color: #A5A8AC;
+  }
+  .rt-dark-300 {
+    color: #81858B;
+  }
+  .rt-dark-400 {
+    color: #666B72;
+  }
+  .rt-dark-500 {
+    color: #4B5159;
+  }
+  .rt-dark-600 {
+    color: #444A51;
+  }
+  .rt-dark-700 {
+    color: #3B4048;
+  }
+  .rt-dark-800 {
+    color: #33373E;
+  }
+  .rt-dark-900 {
+    color: #23272E;
+  }
+  .rt-black-100 {
+    color: #CFCFCF;
+  }
+  .rt-black-200 {
+    color: #B0B0B0;
+  }
+  .rt-black-300 {
+    color: #909090;
+  }
+  .rt-black-400 {
+    color: #787878;
+  }
+  .rt-black-500 {
+    color: #606060;
+  }
+  .rt-black-600 {
+    color: #585858;
+  }
+  .rt-black-700 {
+    color: #4E4E4E;
+  }
+  .rt-black-800 {
+    color: #444444;
+  }
+  .rt-black-900 {
+    color: #333333;
+  }
+  .component-layout {
+    max-width: 1568px;
+    margin: 0 auto;
+    padding: 0 64px;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 1024px) {
+    .component-layout {
+      max-width: 1504px;
+      padding: 0 32px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .component-layout {
+      padding: 0 16px;
+    }
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .cmp_design-support {
+    background-color: #FAFBFC;
+    padding: 48px 0;
+  }
+  @media (max-width: 768px) {
+    .cmp_design-support {
+      padding: 32px 0;
+    }
+  }
+  .cmp_design-support__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 1024px) {
+    .cmp_design-support__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .cmp_design-support__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .cmp_design-support__column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cmp_design-support__card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 768px) {
+    .cmp_design-support__card {
+      padding: 16px;
+    }
+  }
+  .cmp_design-support__title {
+    margin: 0 0 8px 0;
+    color: #0C3677;
+  }
+  .cmp_design-support__desc {
+    margin: 0;
+    color: #4B5159;
+  }
+  .cmp_design-support__divider {
+    height: 1px;
+    background-color: #EBEBEB;
+    margin: 16px 0;
+  }
+  .cmp_design-support__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cmp_design-support__links li {
+    margin: 0;
+    padding: 0;
+  }
+  .cmp_design-support__links a {
+    color: #33373E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .cmp_design-support__links a:hover {
+    color: #3C74C9;
+  }
+  
